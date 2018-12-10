@@ -10,7 +10,7 @@ public abstract class ComputadorBuilder {
 	public void createNewComputador() {
 		computador = new Computador();
 	}
-	
+	public abstract void definir();
 	public abstract void buildMarca();
 	public abstract void buildModelo();
 	public abstract void buildRam();

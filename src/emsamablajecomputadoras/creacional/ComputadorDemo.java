@@ -4,13 +4,13 @@ import com.sun.prism.image.CompoundTexture;
 
 public class ComputadorDemo {
 	public static void main(String[] argc) {
-		ComputadorDirector computadorDirector = new ComputadorDirector();
+		ComputadorDirector computadorDirector = new ComputadorDirector(new AsusRogeBuilder());
 		
-		computadorDirector.setCOmputadorBuilder(new AsusRogeBuilder());
+		
 		
 		computadorDirector.setCOmputadorBuilder(new AsusZenbookBuilder());
 		
-		//computadorDirector.ConstruirComputador();
+		computadorDirector.ConstruirComputador();
 		
 		Computador computador = computadorDirector.getComputadorBuilder();
 	

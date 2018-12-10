@@ -3,6 +3,10 @@ package emsamablajecomputadoras.creacional;
 public class ComputadorDirector {
 	private ComputadorBuilder computadorBuilder;
 
+    public ComputadorDirector(ComputadorBuilder computadorBuilder){
+            this.computadorBuilder=computadorBuilder;
+        
+        }
 	
 	
 	public Computador getComputadorBuilder() {
@@ -15,7 +19,8 @@ public class ComputadorDirector {
 	}
 
 	public void ConstruirComputador() {
-		//computadorBuilder.buildMainboard();
+        computadorBuilder.definir();
+		computadorBuilder.buildMainboard();
 		computadorBuilder.buildAlmacenamiento();
 		computadorBuilder.buildMarca();
 		computadorBuilder.buildModelo();

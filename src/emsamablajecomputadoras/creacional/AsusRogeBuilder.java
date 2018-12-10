@@ -1,6 +1,11 @@
 package emsamablajecomputadoras.creacional;
 
 public class AsusRogeBuilder extends ComputadorBuilder{
+    
+    public void definir(){
+        
+            computador=new Computador();
+        }
 	public void buildMarca() {
 		computador.setMarca("Asus");
 	}
